@@ -186,7 +186,7 @@ async def reset(update: Update, context):
 # === Основной блок ===
 def main():
     init_db()
-    app = Application.builder().token("").build()
+    app = Application.builder().token("1").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CallbackQueryHandler(button_handler))
